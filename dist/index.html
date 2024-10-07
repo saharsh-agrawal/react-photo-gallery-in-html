@@ -106,36 +106,51 @@ tr:nth-child(even){background-color: #f2f2f2}
 </style>
 
 <script>
-const photos = [
-	{
-		src: "https://indiaspellingbee.com/picture-gallery/school-level/1.jpeg",
-		width: 1,
-		height: 1,
-	},
-	{
-		src: "https://indiaspellingbee.com/picture-gallery/school-level/2.jpeg",
-		width: 3,
-		height: 4,
-	},
-	{
-		src: "https://indiaspellingbee.com/picture-gallery/school-level/3.jpeg",
-		width: 3,
-		height: 4,
-	},
-	{
-		src: "https://indiaspellingbee.com/picture-gallery/school-level/4.jpeg",
-		width: 4,
-		height: 3,
-	},
-	{
-		src: "https://indiaspellingbee.com/picture-gallery/school-level/5.jpeg",
-		width: 1,
-		height: 1,
-	},
-	// Add more photos here
-];
+	const photos = [
+		{
+			src: "https://indiaspellingbee.com/picture-gallery/school-level/1.jpeg",
+			width: 1,
+			height: 1,
+		},
+		{
+			src: "https://indiaspellingbee.com/picture-gallery/school-level/2.jpeg",
+			width: 1,
+			height: 1,
+		},
+		{
+			src: "https://indiaspellingbee.com/picture-gallery/school-level/3.jpeg",
+			width: 1,
+			height: 1,
+		},
+		{
+			src: "https://indiaspellingbee.com/picture-gallery/school-level/4.jpeg",
+			width: 1,
+			height: 1,
+		},
+		{
+			src: "https://indiaspellingbee.com/picture-gallery/school-level/5.jpeg",
+			width: 1,
+			height: 1,
+		},
+	];
 </script>
 <script src="bundle.js" defer></script>
+<style>
+	.container-gallery {
+		position: relative;
+		z-index: 10;
+	}
+	.container-gallery img {
+		border-radius: 1rem;
+		transition: 0.3s;
+		margin: 5px 2px !important;
+	}
+	.container-gallery img:hover {
+		box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.3);
+		transform: scale(1.02);
+	}
+
+</style>
 
 	</head>
 
